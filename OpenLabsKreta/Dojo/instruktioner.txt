@@ -1,0 +1,51 @@
+Overall instructions:
+
+The aim of the lab is to challenge a few given assumptions on Object oriented development by creating a simple example and extending it over four iterations. Each iteration will add features and/or apply a restriction that will force the participants to refactor their existing design.
+
+ 
+
+
+Build a Calculator that calculates the total price of all Order Items in an Order
+
+      Iteration #1
+
+     Requirements
+
+    * An item has a quantity and a price
+    * An order can have 0 - n OrderItems
+    * Calculator must be able to calculate total on orders with >1 item
+    * Calculator must handle items with different prices
+
+    * Print an order summary that shows: 
+           - each item on a new row, with the quantity and the total price.
+           - an order total on the bottom row
+
+   
+   Restrictions
+     * TDD (obviously)
+
+
+
+
+    Iteration #2
+    Rqquirements
+    * Add discount (10%) if total over 1000
+    * Item price and total displayed should be discounted price
+    
+    Restriction
+    * All new code must be written in test and refactored (copy paste OK) to methods in production class
+    
+
+    should yield more testcases
+
+
+
+    //Iteration #3
+    // - Prices are before tax (25%) , the order summary needs to show the price after tax and discounts
+    // Restriction
+    //      - All Custom Objects must be immutable (final no setters, etc...)
+
+    //Iteration #4
+    // Restriction
+    //      - Remove use of all Objects (except Wrapper object if using OO language)
+    //         I.e no lists etc.

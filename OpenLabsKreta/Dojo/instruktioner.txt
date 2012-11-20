@@ -1,51 +1,71 @@
-Overall instructions:
+﻿Objective
 
-The aim of the lab is to challenge a few given assumptions on Object oriented development by creating a simple example and extending it over four iterations. Each iteration will add features and/or apply a restriction that will force the participants to refactor their existing design.
+Build a Calculator that calculates the total price of  Order Items in an Order
 
- 
-
-
-Build a Calculator that calculates the total price of all Order Items in an Order
-
-      Iteration #1
-
-     Requirements
-
-    * An item has a quantity and a price
-    * An order can have 0 - n OrderItems
-    * Calculator must be able to calculate total on orders with >1 item
-    * Calculator must handle items with different prices
-
-    * Print an order summary that shows: 
-           - each item on a new row, with the quantity and the total price.
-           - an order total on the bottom row
-
+Iteration #1
+Requirements
+An item has a quantity and a price
+An order can have more than one item
+The OrderCalculator must be able to calculate the total price of all items in the order.
+The Order alculator should print an order summary that shows: 
+the quantity and total price of each order item
+the total price
    
-   Restrictions
-     * TDD (obviously)
+Restrictions / Instructions
+TDD
+15 minutes is not a lot of time, be strict about YAGNI!
+Exception handling is important but its not in the scope of this excercise.
 
+Time
+15 minutes
 
+Iteration #2
+Requirements
+Add discount (10%) if order total exceeds 1000
+Item price and order total should be discounted price after tax.
+   
+Restrictions/Instructions
+All new code must be written in test and moved to methods in the production class. 
+Write a failing test, then make it pass by writing the code in the test. Then extract that logic to a method.
+Never create new classes in production code unless it is a target for a methods written in a test.
+Never write new methods in the production code, only extract them from the test classes  
 
+Time
+30 minutes
 
-    Iteration #2
-    Rqquirements
-    * Add discount (10%) if total over 1000
-    * Item price and total displayed should be discounted price
-    
-    Restriction
-    * All new code must be written in test and refactored (copy paste OK) to methods in production class
-    
+Iteration #3
+Requirements 
+Apply 25% to the order item prices. The order summary needs to show the price after tax and discounts
 
-    should yield more testcases
+Restriction
+All Domain Objects must be immutable 
+All fields must be final.
+The Domain objects become data structures.
 
+Time
+20 minutes
 
+Iteration #4
+Restriction
+Remove all Domain objects!
 
-    //Iteration #3
-    // - Prices are before tax (25%) , the order summary needs to show the price after tax and discounts
-    // Restriction
-    //      - All Custom Objects must be immutable (final no setters, etc...)
+Time
+20 minutes
 
-    //Iteration #4
-    // Restriction
-    //      - Remove use of all Objects (except Wrapper object if using OO language)
-    //         I.e no lists etc.
+General Instructions / Purpose
+
+The aim of the lab is to challenge a few given assumptions on Object oriented development by creating a simple example and extending it over four iterations. Each iteration will add features and/or apply a restriction that will force the participants to re-evaluate and refactor their design.
+
+Iteration 1
+The purpose of iteration one is to create a basic object model, the fewer domain objects the easier it will be towards the end.
+Technically only one two classes are needed, a calculator that performs the calculations and the OrderItem to store the price quantity. The purpose of Iteration 4 is to remove this completely.  
+Iteration 2
+The Purpose here is to create small methods that are easy to chain together to implement the requirements. 	
+If the Red-green-refactor cycle is followed, the methods created in this stage should be almost exclusively stateless, since in the test methods it becomes rely on state from the class under test.
+Based on this exercise -> http://gojko.net/2009/02/27/thought-provoking-tdd-exercise-at-the-software-craftsmanship-conference/  but no need to focus on keeping the steps microscopic.
+Iteration 3
+The purpose of removing mutabiity form Domain objects is to make them into data structures, and thereby enable logic to be more clearly separated.
+There is likely some level of mutation built in by now such as adding orderItems to an Order, setting tax and discounts etc. By removing this option the methods will have to take a larger responsibility.
+Iteration 4
+The purpose of the last two iterations is to show how the limitation of state and a more functional thinking create clean, simple and concise methods that can be very versatile.
+With the removal of mutability it should be relatively easy to  replace the domain objects. Order Item can be a tuple and the Order calculator can be replaced by a class with only static stateless methods.  

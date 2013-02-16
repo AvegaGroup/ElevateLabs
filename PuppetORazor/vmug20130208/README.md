@@ -10,7 +10,9 @@ demo.site.pp Är filen Jonas använde vid Razor demon
 Labben bestod av en master och en client virtuell maskin med Ubuntu 12.04. Utdragen nedan är från de maskiner som Jonas använde
 
 master.history innehåller historyn från labben på master noden
+
 master.site.pp är site.pp från mastern
 
 client.history innehåller historyn från labben på client noden
+
 client.puppet.conf innehåller puppet.conf från clienten

@@ -219,7 +219,7 @@ sub create_vm {
 # ================================================
 sub create_conf_spec {
    my $controller =
-      VirtualBusLogicController->new(key => 0,
+      VirtualLsiLogicController->new(key => 0,
                                      device => [0],
                                      busNumber => 0,
                                      sharedBus => VirtualSCSISharing->new('noSharing'));
@@ -250,6 +250,7 @@ sub create_virtual_disk {
 
    my $disk_vm_dev_conf_spec =
       VirtualDeviceConfigSpec->new(device => $disk,
+
                fileOperation => VirtualDeviceConfigSpecFileOperation->new('create'),
                operation => VirtualDeviceConfigSpecOperation->new('add'));
    return $disk_vm_dev_conf_spec;
@@ -280,7 +281,7 @@ sub get_network {
                                              connected => 0,
                                              startConnected => $poweron);
 
-            my $nic = VirtualPCNet32->new(backing => $nic_backing_info,
+            my $nic = VirtualE1000->new(backing => $nic_backing_info,
                                           key => 0,
                                           unitNumber => $unit_num,
                                           addressType => 'generated',

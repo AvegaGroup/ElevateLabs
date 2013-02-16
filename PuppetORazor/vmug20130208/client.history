@@ -1,0 +1,10 @@
+  puppet agent -t --noop
+   23  nano /etc/hosts
+   24  nano /etc/puppet/puppet.conf 
+   25  nano /etc/hosts
+   26  nano /etc/puppet/puppet.conf 
+   27  puppet agent -t --noop
+   28  puppet agent -t
+   29  ps ax
+   30  ifconfig 
+   31  history > historydumpnode

@@ -1,0 +1,37 @@
+wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb
+   21  dpkg -i puppetlabs-release-precise.deb 
+   22  apt-get upgrade
+   23  apt-get update
+   24  apt-get upgrade
+   25  apt-get distupgrade
+   26  apt-get dist upgrade
+   27  apt-get dist-upgrade 
+   28  apt-get purge puppetmaster
+   29  apt-get purge -f puppetmaster
+   30  apt-get -f install
+   31  cd /etc/puppet/
+   32  ls
+   33  cd manifests/
+   34  ls
+   35  nano site.pp
+   36  puppet module search light
+   37  cat site.pp 
+   38  puppet module install virtualswede-lighttpd
+   39  puppet cert list --all
+   40  ps ax
+   41  ls
+   42  cd ..
+   43  nano puppet.conf 
+   44  cat /etc/hosts
+   45  ifconfig 
+   46  nano /etc/hostt
+   47  nano /etc/hosts
+   48  /etc/init.d/puppetmaster restart
+   49  puppet cert list --all
+   50  puppet cert 
+   51  puppet cert sign labc30.hem.sennerholm.net
+   52  puppet cert list --all
+   53  cd manifests/
+   54  nano site.pp 
+   55  cd
+   56  history > historydump

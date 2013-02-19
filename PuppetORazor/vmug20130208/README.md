@@ -3,7 +3,7 @@ vmug20130208
 
 Denna katalog innehåller filer och material från VMug dragningen den 8 februari 2013. 
 
-Här finns Jonas [presentation](http://www.slideshare.net/jonasrosland/vmug-sweden-2013-0208-puppet-and-razor) från kvällen.
+Här finns Jonas [presentation](http://www.slideshare.net/jonasrosland/vmug-sweden-2013-0208-puppet-and-razor) från kvällen. Jonas har också mer information på sin blogg: purevirtual.eu
 
 demo.site.pp Är filen Jonas Rosland använde vid Razor demon 
 

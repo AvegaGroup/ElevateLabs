@@ -19,7 +19,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-release-plugin</artifactId>
-            <version>2.4</version>
+            <version>2.4.1</version>
           </plugin>
         </plugins>
     </build>
@@ -39,8 +39,8 @@
     </distributionManagement>
 
     <scm>
-      <connection>scm:git:https://jelmstrom@github.com/AvegaGroup/ElevateLabs.git</connection>
-      <developerConnection>scm:git:https://jelmstrom@github.com/AvegaGroup/ElevateLabs.git</developerConnection>
+      <connection>scm:git:https://avegaLabUser@github.com/AvegaGroup/ElevateLabs.git</connection>
+      <developerConnection>scm:git:https://avegaLabUser@github.com/AvegaGroup/ElevateLabs.git</developerConnection>
       <url>http://github.com/AvegaGroup/ElevateLabs</url>
       <tag>HEAD</tag>
   </scm>

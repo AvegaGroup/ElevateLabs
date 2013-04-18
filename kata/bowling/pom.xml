@@ -39,16 +39,8 @@
     </distributionManagement>
 
     <scm>
-<<<<<<< HEAD
       <connection>scm:git:git://avegaLabUser@github.com:AvegaGroup/ElevateLabs.git</connection>
       <developerConnection>scm:git:git://avegaLabUser@github.com:AvegaGroup/ElevateLabs.git</developerConnection>
       <url>htp://github.com/AvegaGroup/ElevateLabs</url>
-    <tag>bowling-1.0.3</tag>
-=======
-      <connection>scm:git:https://avegaLabUser@github.com/AvegaGroup/ElevateLabs.git</connection>
-      <developerConnection>scm:git:https://avegaLabUser@github.com/AvegaGroup/ElevateLabs.git</developerConnection>
-      <url>http://github.com/AvegaGroup/ElevateLabs</url>
-      <tag>HEAD</tag>
->>>>>>> parent of 91c8348... release plugin stuff
   </scm>
 </project>

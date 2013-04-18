@@ -4,7 +4,7 @@
 
     <groupId>se.avega.elevate.labs</groupId>
     <artifactId>bowling</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <dependencies>
        <dependency>

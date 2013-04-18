@@ -1,6 +1,8 @@
 package com.avega.kata;
 public class BowlingCalculator {
 
+    public static final int TEN = 10;
+
     public static int calculateScore(int[][] scores) {
         int totalScore = 0;
         int currentFrame = 0;
@@ -23,7 +25,7 @@ public class BowlingCalculator {
     }
 
     private static boolean isSpare(int[] frame) {
-        return getFrameScore(frame) == 10 && frame[0] < 10;
+        return getFrameScore(frame) == TEN && frame[0] < TEN;
     }
 
     private static boolean isLastFrame(int currentFrameIndex) {
@@ -39,7 +41,7 @@ public class BowlingCalculator {
     }
 
     private static boolean isStrike(int roll) {
-        return roll == 10;
+        return roll == TEN;
     }
 
     private static int getFrameScore(int[] frame) {

@@ -44,4 +44,5 @@
       <url>http://github.com/AvegaGroup/ElevateLabs</url>
       <tag>HEAD</tag>
   </scm>
+    <!-- this should not trigger a build anumore -->
 </project>

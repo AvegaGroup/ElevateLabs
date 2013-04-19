@@ -4,7 +4,7 @@
 
     <groupId>se.avega.elevate.labs</groupId>
     <artifactId>bowling</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <dependencies>
        <dependency>
@@ -39,8 +39,9 @@
     </distributionManagement>
 
     <scm>
-      <connection>scm:git:git@github.com:AvegaGroup/ElevateLabs.git</connection>
+      <connection>scm:git:git@github.comAvegaGroup/ElevateLabs.git</connection>
       <developerConnection>scm:git:git@github.com:AvegaGroup/ElevateLabs.git</developerConnection>
       <url>htp://github.com/AvegaGroup/ElevateLabs</url>
+    <tag>HEAD</tag>
   </scm>
 </project>

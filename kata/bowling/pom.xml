@@ -41,7 +41,7 @@
     <scm>
       <connection>scm:git:git@github.comAvegaGroup/ElevateLabs.git</connection>
       <developerConnection>scm:git:git@github.com:AvegaGroup/ElevateLabs.git</developerConnection>
-      <url>htp://github.com/AvegaGroup/ElevateLabs</url>
+      <url>http://github.com/AvegaGroup/ElevateLabs</url>
     <tag>HEAD</tag>
   </scm>
 </project>
